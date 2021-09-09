@@ -97,7 +97,7 @@ def get_affected_triplets(grid: list, index: int) -> list:
     2. Collect & return list of triplets containing the cell
        Example:
          012        index = 2 => row = 0, column = 2
-         345        Vert. & horiz.triplet in grid[0::3] & grid[0:3],
+         345        Vert. & horiz.triplet in grid[2::3] & grid[0:3],
          678        one diag.triplet in grid[2:7:2]
     """
     row, column = divmod(index, 3)
